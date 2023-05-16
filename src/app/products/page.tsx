@@ -5,7 +5,8 @@ import styles from "./page.module.css";
 export const revalidate = 0;
 
 export default async function ProductsPage() {
-  throw new Error("hi");
+  // 6.4 에러 UI
+  // throw new Error("hi");
   const products = await getProducts();
   const res = await fetch("https://meowfacts.herokuapp.com", {
     next: { revalidate: 0 },
