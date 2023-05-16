@@ -1,6 +1,8 @@
 import { getProducts } from "@/service/products";
 import Link from "next/link";
 import styles from "./page.module.css";
+import clothesImage from "../../../public/images/clothes.jpeg";
+import Image from "next/image";
 
 export const revalidate = 0;
 
@@ -17,6 +19,7 @@ export default async function ProductsPage() {
   return (
     <>
       <h1>제품 소개 페이지!!</h1>
+      <Image src={clothesImage} alt="Clothes" width={500} priority />
       <ul>
         {products.map((product) => (
           <li key={product.id}>

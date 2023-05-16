@@ -14,7 +14,7 @@ export async function getProducts(): Promise<Product[]> {
   const result = new Promise<Product[]>((resolve) => {
     setTimeout(() => {
       resolve(JSON.parse(data));
-    }, 2000);
+    }, 0);
   });
 
   return result;
