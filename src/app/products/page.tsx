@@ -1,7 +1,7 @@
 import { getProducts } from "@/service/products";
 import Link from "next/link";
 import styles from "./page.module.css";
-import clothesImage from "../../../public/images/clothes.jpeg";
+import clothesImage from "../../../public/images/clothes.jpg";
 import Image from "next/image";
 
 export const revalidate = 0;
